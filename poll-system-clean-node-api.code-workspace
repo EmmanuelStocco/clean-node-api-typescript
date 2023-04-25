@@ -7,16 +7,16 @@
 	"settings": {
 		"workbench.colorTheme": "Default Dark+",
 		"workbench.colorCustomizations": {
-			"titleBar.activeBackground": "#15c006",
-      "titleBar.activeForeground": "#000000",
-      "titleBar.inactiveForeground": "#000000",
-      "titleBar.inactiveBackground": "#15c006",
+			"titleBar.activeBackground": "#16a309",
+      "titleBar.activeForeground": "#ffffffd0",
+      "titleBar.inactiveForeground": "#ffffffd0",
+      "titleBar.inactiveBackground": "#16a309",
 			// "sideBar.background": "#50492c",
 			"sideBar.foreground": "#FFFFFF",
 			"sideBar.border": "#FFFFFF",
 			"sideBarTitle.foreground": "#FFFFFF",
-			"activityBar.background": "#15c006",
-			"activityBar.foreground": "#000000",
+			"activityBar.background": "#16a309",
+			"activityBar.foreground": "#FFFFFF",
 			"activityBar.border": "#FFFFFF",
 			"activityBarBadge.background": "#E74C3C",
 			"activityBarBadge.foreground": "#FFFFFF"
