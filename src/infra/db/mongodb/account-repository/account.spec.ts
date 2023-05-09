@@ -1,6 +1,12 @@
 import { MongoHelper } from '../helpers/mongo-helper'
 import { AccountMongoRepository } from './account'
 
+const mockAddAccountParams = ({
+  name: 'any_name',
+  email: 'any_email',
+  password: 'any_password'
+})
+
 describe('Account Mongo Repository', () => {
   beforeAll(async () => {
     await MongoHelper.connect(process.env.MONGO_URL)
@@ -11,7 +17,7 @@ describe('Account Mongo Repository', () => {
   })
 
   beforeEach(async () => {
-    const accountCollection = MongoHelper.getCollection('accounts')
+    const accountCollection = await MongoHelper.getCollection('accounts')
     await accountCollection.deleteMany({})
   })
 
@@ -21,11 +27,8 @@ describe('Account Mongo Repository', () => {
 
   test('Should return an account on success', async () => {
     const sut = makeSut()
-    const isValid = await sut.add({
-      name: 'any_name',
-      email: 'any_email',
-      password: 'any_password'
-    })
-    expect(isValid).toBeTruthy()
+    const addAccountParams = mockAddAccountParams
+    const isValid = await sut.add(addAccountParams)
+    expect(isValid).toBe(true)
   })
 })
