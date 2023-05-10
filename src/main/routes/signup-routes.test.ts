@@ -13,7 +13,7 @@ describe('SignUp Routes', () => {
 
   beforeEach(async () => {
     // eslint-disable-next-line @typescript-eslint/await-thenable
-    const accountCollection = await MongoHelper.getCollection('accounts')
+    const accountCollection = MongoHelper.getCollection('accounts')
     await accountCollection.deleteMany({})
   })
 
