@@ -1,5 +1,5 @@
 import { type HttpRequest, type Controller, type HttpResponse } from '../../presentation/protocols'
-import { type LogErrorRepository } from '../../data/protocols/db/log-error-repository'
+import { type LogErrorRepository } from '../../data/protocols/db/log/log-error-repository'
 
 export class LogControllerDecorator implements Controller { // soLid implementar uma classe no lugar de outro
   private readonly controller: Controller
