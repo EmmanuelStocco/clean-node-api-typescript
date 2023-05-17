@@ -6,6 +6,14 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "allowJs": true,
-    "skipLibCheck": true
-  }
+    "skipLibCheck": true,
+    "rootDir": "src"
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
 }

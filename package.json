@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node sit/main/server.js",
-    "debug": "node --inspect-0.0.0.0:9222 --nolazy sit/main/server.js",
+    "debug": "nodemon -L --watch ./dist --inspect-0.0.0.0:9222 --nolazy ./dist/main/server.js",
     "build": "rimraf dist && tsc",
     "dev": "sucrase-node src/main/server.ts",
     "up": "npm run build && docker-compose up",
@@ -54,6 +54,7 @@
     "fast-glob": "^3.2.12",
     "jsonwebtoken": "^9.0.0",
     "mongodb": "^5.3.0",
+    "nodemon": "^2.0.2",
     "validator": "^13.9.0"
   },
   "engines": {
