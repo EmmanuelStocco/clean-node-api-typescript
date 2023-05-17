@@ -1,10 +1,10 @@
 import { type AddAccountRepository, type AccountModel, type AddAccount, type AddAccountModel, type Hasher } from './db-add-account-protocols'
 
 export class DbAddAccount implements AddAccount {
-  private readonly hasher: Hasher
-  private readonly addAccountRepository: AddAccountRepository
-
-  constructor (hasher: Hasher, addAccountRepository: AddAccountRepository) {
+  constructor (
+    private readonly hasher: Hasher,
+    private readonly addAccountRepository: AddAccountRepository
+  ) {
     this.hasher = hasher
     this.addAccountRepository = addAccountRepository
   }
