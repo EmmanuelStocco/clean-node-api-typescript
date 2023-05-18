@@ -1,4 +1,6 @@
 dist
 node_modules
-data
 coverage
+./data
+coverage
+.vscode
