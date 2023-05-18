@@ -6,7 +6,7 @@ import { hash } from 'bcrypt'
 describe('Login Routes', () => {
   let accountCollection: Collection
   beforeAll(async () => {
-    await MongoHelper.connect(process.env.MONGO_URL)
+    await MongoHelper.connect(process.env.MONGO_URL as string)
   })
 
   afterAll(async () => {

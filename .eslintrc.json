@@ -16,6 +16,7 @@
     "@typescript-eslint/method-signature-style": "off",
     "@typescript-eslint/await-thenable": "off",
     "@typescript-eslint/no-invalid-void-type": "off",
+    "@typescript-eslint/no-unnecessary-type-assertion": "off",
     "import/export": "off"
   }
 }
