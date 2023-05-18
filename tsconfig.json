@@ -7,13 +7,13 @@
     "sourceMap": true,
     "allowJs": true,
     "skipLibCheck": true,
-    "rootDir": "src"
+    // "rootDir": "src"
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "**/*.spec.ts",
-    "**/*.test.ts"
-  ]
+  // "include": [
+  //   "src"
+  // ],
+  // "exclude": [
+  //   "**/*.spec.ts",
+  //   "**/*.test.ts"
+  // ]
 }
