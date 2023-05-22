@@ -5,7 +5,7 @@
 		}
 	],
 	"settings": {
-		"workbench.colorTheme": "Default Dark+",
+		"workbench.colorTheme": "Omni",
 		"workbench.colorCustomizations": {
 			"titleBar.activeBackground": "#02833c",
       "titleBar.activeForeground": "#ffffffd0",
