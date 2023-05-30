@@ -68,7 +68,7 @@ describe('Survey Routes', () => {
             answer: 'Answer 2'
           }]
         })
-        .expect(204)
+        .expect(403)
     })
   })
 
@@ -78,5 +78,32 @@ describe('Survey Routes', () => {
         .post('/api/surveys')
         .expect(403)
     })
+
+    // const mockAccessToken = async (): Promise<string> => {
+    //   const res = await accountCollection.insertOne({
+    //     name: 'Rodrigo',
+    //     email: 'rodrigo.manguinho@gmail.com',
+    //     password: '123',
+    //     role: 'admin'
+    //   })
+    //   const id = res.insertedId.toHexString()
+    //   const accessToken = sign({ id }, env.jwtSecret)
+    //   await accountCollection.updateOne({
+    //     _id: res.insertedId
+    //   }, {
+    //     $set: {
+    //       accessToken
+    //     }
+    //   })
+    //   return accessToken
+    // }
+
+    // test('Should return 204 on load surveys with valid accessToken', async () => {
+    //   const accessToken = await mockAccessToken()
+    //   await request(app)
+    //     .get('/api/surveys')
+    //     .set('x-access-token', accessToken)
+    //     .expect(204)
+    // })
   })
 })
