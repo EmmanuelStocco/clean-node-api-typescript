@@ -71,4 +71,12 @@ describe('Survey Routes', () => {
         .expect(403)
     })
   })
+
+  describe('Get /surveys', () => {
+    test('Should return 403 on load surveys whitout accessToken', async () => {
+      await request(app)
+        .get('/api/surveys')
+        .expect(403)
+    })
+  })
 })
