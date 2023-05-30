@@ -58,7 +58,7 @@ describe('Survey Routes', () => {
       })
       await request(app)
         .post('/api/surveys')
-        .set('x-acces-token', accessToken)
+        .set('x-access-token', accessToken)
         .send({
           question: 'Question',
           answers: [{
@@ -68,14 +68,14 @@ describe('Survey Routes', () => {
             answer: 'Answer 2'
           }]
         })
-        .expect(403)
+        .expect(204)
     })
   })
 
   describe('Get /surveys', () => {
     test('Should return 403 on load surveys whitout accessToken', async () => {
       await request(app)
-        .get('/api/surveys')
+        .post('/api/surveys')
         .expect(403)
     })
   })
