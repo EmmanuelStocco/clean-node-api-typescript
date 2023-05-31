@@ -28,7 +28,7 @@ const makeLoadAccountByTokenRepository = (): LoadAccountByTokenRepository => {
   return new LoadAccountByTokenRepositoryStub()
 }
 
-interface SutTypes {
+type SutTypes = {
   sut: DbLoadAcconutByToken
   decrypterStub: Decrypter
   loadAccountByTokenRepositoryStub: LoadAccountByTokenRepository
